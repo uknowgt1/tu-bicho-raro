@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tu Bicho Raro">
+  <rect width="120" height="120" rx="26" fill="#FFF6E9"/>
+  <path d="M60 20 L48 40 L72 40 Z" fill="#FF6B35" stroke="#221A14" stroke-width="5" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="72" rx="40" ry="38" fill="#FFC145" stroke="#221A14" stroke-width="6"/>
+  <ellipse cx="46" cy="66" rx="10" ry="11" fill="#fff" stroke="#221A14" stroke-width="5"/>
+  <ellipse cx="74" cy="66" rx="10" ry="11" fill="#fff" stroke="#221A14" stroke-width="5"/>
+  <circle cx="48" cy="69" r="4.5" fill="#221A14"/>
+  <circle cx="76" cy="69" r="4.5" fill="#221A14"/>
+  <path d="M48 88 Q60 99 72 88" fill="none" stroke="#221A14" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="34" cy="82" rx="7" ry="5" fill="rgba(232,72,85,.5)"/>
+  <ellipse cx="86" cy="82" rx="7" ry="5" fill="rgba(232,72,85,.5)"/>
+</svg>

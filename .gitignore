@@ -1,0 +1,23 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Entornos y secretos
+.env
+.env.*
+*.key
+*.pem
+
+# Dependencias y cachés (el sitio no usa ninguna, pero por si acaso)
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Registros
+*.log

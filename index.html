@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tu Bicho Raro — Descubre qué criatura habita tu caos</title>
+<meta name="description" content="Un test juguetón de 10 preguntas que revela tu Bicho Raro interior. Comparte tu tarjeta, reta a tus amigos y completa el bestiario de 12 criaturas.">
+<meta name="theme-color" content="#FFF6E9">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+<link rel="canonical" href="./">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tu Bicho Raro">
+<meta property="og:title" content="Tu Bicho Raro — descubre qué criatura habita tu caos">
+<meta property="og:description" content="10 preguntas, 12 bichos y una tarjeta lista para presumir. ¿Cuál te toca? Descúbrelo en 90 segundos y reta a tus amigos.">
+<meta property="og:image" content="assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ilustración de tres criaturas coloridas de Tu Bicho Raro con el texto: ¿Qué bicho eres?">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="./">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tu Bicho Raro — descubre qué criatura habita tu caos">
+<meta name="twitter:description" content="10 preguntas, 12 bichos y una tarjeta lista para presumir. ¿Cuál te toca?">
+<meta name="twitter:image" content="assets/img/og.png">
+<meta name="twitter:image:alt" content="Ilustración de criaturas coloridas de Tu Bicho Raro">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+<noscript>
+  <div class="aviso-js" role="alert">
+    <div class="wrap">
+      <p><strong>Este juego necesita JavaScript para funcionar.</strong> Actívalo en tu navegador y recarga la página. Todo el test corre dentro de tu propio dispositivo: no hay cuentas ni servidores que reciban tus respuestas.</p>
+    </div>
+  </div>
+</noscript>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/inicio" data-route="inicio" aria-label="Tu Bicho Raro, ir al inicio">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">Tu Bicho Raro</span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <button class="nav-link" type="button" data-route="inicio">Inicio</button>
+      <button class="nav-link" type="button" data-route="test">Test</button>
+      <button class="nav-link" type="button" data-route="contrarreloj">Contrarreloj</button>
+      <button class="nav-link" type="button" data-route="coleccion">Colección <span class="nav-badge" id="navColeccionBadge" hidden>0</span></button>
+      <button class="nav-link" type="button" data-route="laboratorio">Laboratorio</button>
+      <button class="nav-link" type="button" data-route="acerca">Acerca</button>
+    </nav>
+    <button class="btn btn-primary btn-sm topbar-cta" type="button" data-action="empezar">Hacer el test</button>
+  </div>
+</header>
+
+<div class="compartido-banner" id="sharedBanner" hidden role="status">
+  <div class="wrap compartido-inner">
+    <p class="compartido-text" id="sharedBannerText"></p>
+    <button class="btn btn-sm btn-primary" type="button" data-action="empezar">Hacer mi test</button>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===================== INICIO ===================== -->
+  <section class="view" id="view-inicio" data-view="inicio">
+    <div class="hero">
+      <div class="hero-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <div class="wrap hero-inner">
+        <p class="kicker">Test juguetón · 90 segundos · sin registro</p>
+        <h1 class="hero-title">¿Qué <span class="hl">bicho raro</span> habita en ti?</h1>
+        <p class="hero-sub">Responde 10 preguntas absurdamente cotidianas y descubre tu criatura interior: su nombre, sus poderes y su kriptonita. Luego presúmelo.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" type="button" data-action="empezar">Empezar el test</button>
+          <button class="btn btn-ghost btn-lg" type="button" data-route="contrarreloj">Reto contrarreloj</button>
+        </div>
+        <ul class="hero-facts">
+          <li><strong id="factBichos">12</strong> bichos por descubrir</li>
+          <li><strong>10</strong> preguntas</li>
+          <li><strong>0</strong> registros</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap section">
+      <h2 class="section-title">Cómo funciona</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Responde</h3>
+          <p>Diez preguntas rápidas, sin respuestas correctas ni incorrectas.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>Conoce tu bicho</h3>
+          <p>Te damos nombre, superpoder, kriptonita y tres estadísticas muy serias.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>Presúmelo</h3>
+          <p>Descarga tu tarjeta, cópiala en el chat y reta a quien se atreva.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="wrap section">
+      <h2 class="section-title">Por qué vas a volver</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-emoji" aria-hidden="true">🎴</span>
+          <h3>Tarjeta compartible</h3>
+          <p>Tu resultado se convierte en una imagen lista para el chat, la story o el grupo de la familia.</p>
+        </article>
+        <article class="card">
+          <span class="card-emoji" aria-hidden="true">📚</span>
+          <h3>Bestiario de 12</h3>
+          <p>Cada test desbloquea un bicho. Completa la colección y presume de bestiario lleno.</p>
+        </article>
+        <article class="card">
+          <span class="card-emoji" aria-hidden="true">🌅</span>
+          <h3>Bicho del día</h3>
+          <p>Una criatura distinta te espera cada jornada. Vuelve a ver cuál salió hoy.</p>
+        </article>
+        <article class="card">
+          <span class="card-emoji" aria-hidden="true">⚔️</span>
+          <h3>Reto entre amigos</h3>
+          <p>Manda tu enlace de reto: quien lo abra ve tu bicho y tiene que sacar el suyo.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="wrap section" id="bichoDelDiaWrap">
+      <h2 class="section-title">El bicho de hoy</h2>
+      <div class="dia-card" id="bichoDelDia" aria-live="polite"></div>
+    </div>
+
+    <div class="wrap section">
+      <div class="cta-band">
+        <h2>¿Te atreves?</h2>
+        <p>Menos de dos minutos para saber qué criatura te representa.</p>
+        <button class="btn btn-primary btn-lg" type="button" data-action="empezar">Descubrir mi bicho</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEST ===================== -->
+  <section class="view" id="view-test" data-view="test" hidden>
+    <div class="wrap section">
+      <div class="panel" id="testIntro">
+        <p class="kicker">Test principal</p>
+        <h2 class="panel-title">Bienvenido al bestiario</h2>
+        <p class="panel-text">Diez preguntas. Ninguna respuesta es incorrecta (aunque algunas digan mucho de ti). Al final recibes tu bicho con tarjeta incluida.</p>
+        <ul class="mini-list">
+          <li>Nada se envía a ningún servidor: todo pasa en tu dispositivo.</li>
+          <li>Puedes volver a empezar las veces que quieras.</li>
+          <li>Si sales a medias, no pasa nada: nadie se enterará.</li>
+        </ul>
+        <div class="panel-actions">
+          <button class="btn btn-primary btn-lg" type="button" id="btnComenzarTest">Comenzar</button>
+          <button class="btn btn-ghost" type="button" data-route="inicio">Volver al inicio</button>
+        </div>
+      </div>
+
+      <div class="quiz" id="quizBox" hidden>
+        <div class="quiz-head">
+          <p class="quiz-count"><span id="quizCount">1</span> / <span id="quizTotal">10</span></p>
+          <button class="btn btn-quiet btn-sm" type="button" id="btnSalirTest">Salir</button>
+        </div>
+        <div class="progress" role="progressbar" aria-labelledby="quizCount" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="quizProgress">
+          <span class="progress-fill" id="quizProgressFill"></span>
+        </div>
+        <h2 class="quiz-question" id="quizQuestion" tabindex="-1">—</h2>
+        <div class="quiz-options" id="quizOptions" role="group" aria-label="Opciones de respuesta"></div>
+        <div class="quiz-foot">
+          <button class="btn btn-quiet btn-sm" type="button" id="btnAtrasPregunta">Atrás</button>
+          <p class="quiz-hint" id="quizHint">Elige la opción que más se parezca a ti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTADO ===================== -->
+  <section class="view" id="view-resultado" data-view="resultado" hidden>
+    <div class="wrap section">
+      <div class="resultado-grid">
+        <div class="resultado-card-wrap">
+          <div class="tarjeta-marco" id="tarjetaMarco">
+            <canvas id="cardCanvas" width="1080" height="1350" role="img" aria-label="Tarjeta de resultado de tu Bicho Raro"></canvas>
+          </div>
+          <p class="canvas-fallback" id="canvasFallback" hidden></p>
+        </div>
+        <div class="resultado-info">
+          <p class="kicker" id="resKicker">Tu bicho es</p>
+          <h2 class="res-nombre" id="resNombre">—</h2>
+          <p class="res-gancho" id="resGancho">—</p>
+          <p class="res-desc" id="resDesc">—</p>
+
+          <div class="stats" id="resStats" aria-label="Estadísticas de tu bicho"></div>
+
+          <div class="dos-columnas">
+            <div class="mini-card">
+              <h3>Superpoder</h3>
+              <p id="resSuper">—</p>
+            </div>
+            <div class="mini-card">
+              <h3>Kriptonita</h3>
+              <p id="resKripto">—</p>
+            </div>
+          </div>
+
+          <div class="share-block">
+            <h3 class="share-title">Presúmelo 👇</h3>
+            <div class="alias-field">
+              <label for="aliasInput">Tu nombre o alias (opcional, sirve para el reto)</label>
+              <input id="aliasInput" type="text" maxlength="18" autocomplete="nickname" placeholder="Ej.: Ana" spellcheck="false">
+            </div>
+            <div class="share-actions">
+              <button class="btn btn-primary" type="button" id="btnCompartir">Compartir</button>
+              <button class="btn btn-ghost" type="button" id="btnCopiarEnlace">Copiar enlace</button>
+              <button class="btn btn-ghost" type="button" id="btnDescargarPng">Descargar tarjeta</button>
+            </div>
+            <div class="share-social" aria-label="Compartir en redes sociales">
+              <a class="chip" id="linkWhatsapp" href="#/resultado" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="chip" id="linkTelegram" href="#/resultado" target="_blank" rel="noopener">Telegram</a>
+              <a class="chip" id="linkX" href="#/resultado" target="_blank" rel="noopener">X</a>
+            </div>
+            <p class="share-status" id="shareStatus" role="status"></p>
+          </div>
+
+          <div class="resultado-actions">
+            <button class="btn btn-accent" type="button" id="btnRetar">Retar a un amigo</button>
+            <button class="btn btn-ghost" type="button" data-route="coleccion">Ver mi colección</button>
+            <button class="btn btn-ghost" type="button" id="btnRepetir">Repetir el test</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTRARRELOJ ===================== -->
+  <section class="view" id="view-contrarreloj" data-view="contrarreloj" hidden>
+    <div class="wrap section">
+      <div class="panel" id="crIntro">
+        <p class="kicker">Reto contrarreloj</p>
+        <h2 class="panel-title">Las mismas 10 preguntas. 40 segundos.</h2>
+        <p class="panel-text">Aquí no importa qué tan especial eres, sino qué tan rápido decides. Cada respuesta suma 10 puntos y cada segundo que te sobra vale 2 puntos extra.</p>
+        <ul class="mini-list">
+          <li>Tu mejor marca se guarda en este dispositivo.</li>
+          <li>Puedes reintentarlo sin límite.</li>
+          <li>Si cambias de pestaña, el cronómetro se pausa en lugar de castigarte.</li>
+        </ul>
+        <div class="panel-actions">
+          <button class="btn btn-primary btn-lg" type="button" id="btnComenzarCR">Empezar contrarreloj</button>
+          <button class="btn btn-ghost" type="button" data-route="inicio">Volver al inicio</button>
+        </div>
+      </div>
+
+      <div class="quiz" id="crBox" hidden>
+        <div class="cr-head">
+          <p class="cr-timer" id="crTimer" aria-live="off">40,0 s</p>
+          <p class="cr-score">Puntos: <strong id="crScore">0</strong></p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Tiempo restante" aria-valuemin="0" aria-valuemax="40" aria-valuenow="40" id="crProgress">
+          <span class="progress-fill progress-fill-alt" id="crProgressFill"></span>
+        </div>
+        <p class="quiz-count"><span id="crCount">1</span> / <span id="crTotal">10</span></p>
+        <h2 class="quiz-question" id="crQuestion" tabindex="-1">—</h2>
+        <div class="quiz-options" id="crOptions" role="group" aria-label="Opciones de respuesta"></div>
+      </div>
+
+      <div class="panel" id="crResult" hidden>
+        <p class="kicker">Resultado contrarreloj</p>
+        <h2 class="panel-title" id="crFinalTitle">¡Se acabó el tiempo!</h2>
+        <p class="panel-text" id="crFinalText">—</p>
+        <div class="metrics-inline" id="crFinalMetrics"></div>
+        <div class="panel-actions">
+          <button class="btn btn-primary" type="button" id="btnRepetirCR">Reintentar</button>
+          <button class="btn btn-ghost" type="button" data-action="empezar">Hacer el test completo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COLECCIÓN ===================== -->
+  <section class="view" id="view-coleccion" data-view="coleccion" hidden>
+    <div class="wrap section">
+      <p class="kicker">Tu bestiario</p>
+      <h2 class="section-title">Colección de bichos</h2>
+      <div class="coleccion-progreso">
+        <div class="progress" role="progressbar" aria-label="Progreso de la colección" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0" id="colProgress">
+          <span class="progress-fill" id="colProgressFill"></span>
+        </div>
+        <p class="coleccion-count"><strong id="colCount">0</strong> de 12 descubiertos</p>
+      </div>
+      <div class="coleccion-grid" id="coleccionGrid"></div>
+      <div class="panel-actions">
+        <button class="btn btn-primary" type="button" data-action="empezar">Descubrir otro bicho</button>
+        <button class="btn btn-ghost" type="button" data-route="laboratorio">Ver mis métricas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LABORATORIO ===================== -->
+  <section class="view" id="view-laboratorio" data-view="laboratorio" hidden>
+    <div class="wrap section">
+      <p class="kicker">Panel de uso</p>
+      <h2 class="section-title">Laboratorio de métricas</h2>
+      <p class="panel-text"><strong>Estos números son tuyos y de nadie más.</strong> No son estadísticas del sitio ni de otras personas: es el resumen de lo que ha pasado en este navegador. Se calcula y se guarda únicamente aquí, sin cuentas y sin servidores, así que si borras los datos del navegador (o usas el modo privado) desaparecen.</p>
+
+      <div class="metric-grid" id="metricGrid"></div>
+
+      <div class="lab-columnas">
+        <div class="lab-block">
+          <h3>Reparto de bichos descubiertos</h3>
+          <div class="barchart" id="barchart"></div>
+        </div>
+        <div class="lab-block">
+          <h3>Actividad por día</h3>
+          <div class="barchart" id="barchartDias"></div>
+        </div>
+      </div>
+
+      <div class="lab-block">
+        <h3>Registro reciente</h3>
+        <div class="table-wrap">
+          <table class="tabla">
+            <thead>
+              <tr><th scope="col">Momento</th><th scope="col">Evento</th><th scope="col">Detalle</th></tr>
+            </thead>
+            <tbody id="labLog"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel-actions">
+        <button class="btn btn-ghost" type="button" id="btnExportCsv">Exportar CSV</button>
+        <button class="btn btn-ghost" type="button" id="btnExportJson">Exportar JSON</button>
+        <button class="btn btn-danger" type="button" id="btnReset">Borrar mis datos</button>
+      </div>
+      <p class="share-status" id="labStatus" role="status"></p>
+
+      <details class="raw">
+        <summary>Ver datos en bruto (JSON)</summary>
+        <pre id="rawJson"></pre>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===================== ACERCA ===================== -->
+  <section class="view" id="view-acerca" data-view="acerca" hidden>
+    <div class="wrap section">
+      <p class="kicker">Acerca del sitio</p>
+      <h2 class="section-title">Qué es Tu Bicho Raro</h2>
+      <p class="panel-text">Tu Bicho Raro es un test de personalidad juguetón, hecho para compartir. Diez preguntas cotidianas se convierten en una de doce criaturas, cada una con su carácter, su superpoder y su punto débil. Es un juego: no pretende describirte de verdad, solo hacerte sonreír noventa segundos y darte algo bonito para mandar al chat.</p>
+      <div class="dos-columnas">
+        <div class="mini-card">
+          <h3>Privacidad</h3>
+          <p>Tus respuestas y tus métricas se guardan solo en tu navegador (almacenamiento local). No hay cuentas, no hay correos, no hay servidores que reciban tus datos. Si borras los datos del navegador, se borra todo.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Cómo compartimos</h3>
+          <p>Cuando compartes, viaja únicamente un código corto que describe tus respuestas y tu bicho. Quien lo abre ve tu criatura y puede hacer su propio test. Nada más.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Hecho con cariño</h3>
+          <p>Sin publicidad, sin rastreadores, sin cuentas. Un juguete web pequeño y honesto.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Accesibilidad</h3>
+          <p>Navegación por teclado, foco visible, contraste alto y respeto por quien prefiere menos movimiento en pantalla.</p>
+        </div>
+      </div>
+      <div class="panel-actions">
+        <button class="btn btn-primary" type="button" data-action="empezar">Hacer el test</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>Tu Bicho Raro © <span id="year">2026</span> · Hecho como juguete web, sin servidores ni rastreadores.</p>
+    <p class="footer-links">
+      <button class="linklike" type="button" data-route="acerca">Acerca</button>
+      <button class="linklike" type="button" data-route="laboratorio">Métricas</button>
+      <button class="linklike" type="button" data-route="coleccion">Colección</button>
+    </p>
+  </div>
+</footer>
+
+<div class="confeti-capa" id="confeti" aria-hidden="true"></div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<!-- =========================================================================
+     NOTA DE MANTENIMIENTO
+     - Textos, preguntas y bichos: assets/js/data.js
+     - Colores y tipografia: assets/css/style.css (bloque :root)
+     - og:image y og:url usan rutas relativas: las plataformas de
+       previsualizacion las resuelven contra la URL final de la pagina.
+       Si el sitio pasa a tener dominio propio, se pueden reemplazar por
+       rutas absolutas para maxima compatibilidad.
+     - Todo el sitio es autocontenido: no se carga nada desde otros dominios.
+     ========================================================================= -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

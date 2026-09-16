@@ -4,7 +4,11 @@ Sitio web de entretenimiento: un test de personalidad juguetón que convierte 10
 cotidianas en una de **12 criaturas**, con tarjeta de resultado compartible, modo contrarreloj,
 colección de bichos y panel de uso local.
 
-**Sitio publicado:** https://fnipfhng.autoclawai.space/
+## Enlaces en vivo
+
+- **Repositorio:** https://github.com/uknowgt1/tu-bicho-raro
+- **Publicado con GitHub Pages:** https://uknowgt1.github.io/tu-bicho-raro/
+- **Publicado en el hosting de AutoClaw:** https://fnipfhng.autoclawai.space/
 
 No usa dependencias, ni frameworks, ni servicios externos: son archivos estáticos que funcionan
 tal cual. Todo el juego corre en el navegador de quien visita el sitio.
